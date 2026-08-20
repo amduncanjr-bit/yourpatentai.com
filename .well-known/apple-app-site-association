@@ -1,0 +1,26 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "5962W36VG2.app.rork.yourpatentai"
+        ],
+        "components": [
+          {
+            "/": "/library/*",
+            "comment": "Library article deep links"
+          },
+          {
+            "/": "/library",
+            "comment": "Library index"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "5962W36VG2.app.rork.yourpatentai"
+    ]
+  }
+}

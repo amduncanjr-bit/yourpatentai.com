@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://yourpatentai.com/sitemap.xml
+Sitemap: https://www.yourpatentai.com/sitemap.xml

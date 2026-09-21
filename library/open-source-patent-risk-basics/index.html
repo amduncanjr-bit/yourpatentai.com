@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open Source Software and Patent Risk: What Developers and Founders Need to Know — YourPatentAI Library</title>
+<meta name="description" content="A plain-English explanation of how open source software licenses interact with patent rights and what practical steps developers and founders can take to reduce exposure">
+<link rel="canonical" href="https://yourpatentai.com/library/open-source-patent-risk-basics/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YourPatentAI">
+<meta property="og:title" content="Open Source Software and Patent Risk: What Developers and Founders Need to Know">
+<meta property="og:description" content="A plain-English explanation of how open source software licenses interact with patent rights and what practical steps developers and founders can take to reduce exposure">
+<meta property="og:url" content="https://yourpatentai.com/library/open-source-patent-risk-basics/">
+<meta property="og:image" content="https://yourpatentai.com/library/open-source-patent-risk-basics/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Open Source Software and Patent Risk: What Developers and Founders Need to Know">
+<meta name="twitter:description" content="A plain-English explanation of how open source software licenses interact with patent rights and what practical steps developers and founders can take to reduce exposure">
+<meta name="twitter:image" content="https://yourpatentai.com/library/open-source-patent-risk-basics/og.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E1A2B;--ink:#14202E;--cream:#FBF8F2;--muted:#5B6672;--gold:#C9A227;--line:rgba(20,32,46,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);background:var(--navy);color:#fff}
+.nav a{color:#fff;text-decoration:none}.nav .brand{font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.nav .links{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:.82rem}
+.nav .cta{background:var(--gold);color:#1a1406;border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--navy);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,72px)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}.crumb a{color:var(--gold);text-decoration:none}
+.band h1{font-weight:600;font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+.band .lede{color:rgba(255,255,255,.78);font-size:1.1rem;max-width:58ch}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.55);margin-top:18px}
+.prose{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.prose p{margin:0 0 1.35em}.prose h2{font-weight:600;font-size:1.55rem;margin:1.9em 0 .6em}.prose h3{font-weight:600;font-size:1.2rem;margin:1.6em 0 .5em}
+.prose ul,.prose ol{margin:0 0 1.35em 1.3em}.prose li{margin:.3em 0}.prose code{font-family:'IBM Plex Mono',monospace;font-size:.85em;background:rgba(20,32,46,.06);padding:.1em .35em;border-radius:4px}
+.appcta{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:18px;padding:36px 28px}
+.appcta h3{font-weight:600;font-size:1.3rem;margin-bottom:8px}.appcta p{color:rgba(255,255,255,.75);margin:0 0 18px;font-size:1rem}
+.appcta a{display:inline-block;background:var(--gold);color:#1a1406;font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;margin-right:10px}
+.appcta a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.disclaimer{margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.list{list-style:none}.list li{border-bottom:1px solid var(--line)}.list a{display:block;padding:26px 0;text-decoration:none;color:inherit}
+.list .cat{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.list h2{font-weight:600;font-size:1.45rem;margin:6px 0 6px}.list a:hover h2{color:var(--gold)}.list p{color:var(--muted);margin:0;font-size:1rem}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:rgba(255,255,255,.8);text-decoration:none}
+</style>
+</head><body>
+<nav class="nav"><a class="brand" href="/">YourPatentAI</a><div class="links"><a href="/library/">Library</a><a class="cta" href="https://apps.apple.com/us/app/id6759668270">Get the app</a></div></nav>
+
+<header class="band"><div class="wrap">
+<p class="crumb"><a href="/library/">Library</a> · Open Source</p>
+<h1>Open Source Software and Patent Risk: What Developers and Founders Need to Know</h1>
+<p class="lede">A plain-English explanation of how open source software licenses interact with patent rights and what practical steps developers and founders can take to reduce exposure</p>
+<p class="meta">2026-08-24 · open source · software patents · patent licenses · patent risk</p>
+</div></header>
+<article class="prose"><div class="wrap">
+<p>Using open source software is nearly universal in modern product development, but most developers and founders have never thought carefully about the patent dimension. Copyright licenses — the legal backbone of every open source project — handle copying and distribution, but they do not automatically resolve patent questions. Those are two separate bodies of law, and conflating them is where real risk hides.</p>
+<h2>Why Copyright Licenses Don't Fully Solve the Patent Problem</h2>
+<p>When you use an open source library, you receive a copyright license that lets you copy, modify, and distribute the code under certain conditions. What you may or may not receive is a patent license — the right to practice any patented inventions implemented in that code.</p>
+<p>Some open source licenses are explicit about patents. Others say almost nothing.</p>
+<h3>Licenses That Include an Express Patent Grant</h3>
+<p>Several widely used licenses include a deliberate patent license alongside the copyright grant:</p>
+<ul><li><strong>Apache License 2.0</strong> — grants a royalty-free patent license from each contributor for their contributions, and includes a termination clause: if you sue anyone under the project for patent infringement, your patent license terminates.</li><li><strong>GPLv3</strong> — contains patent protection provisions designed to ensure downstream recipients can exercise the software freedoms without patent interference from upstream contributors.</li><li><strong>Mozilla Public License 2.0</strong> — includes a contributor patent license scoped to the covered software.</li></ul>
+<p>The practical meaning: these licenses give you some confidence that contributors are not going to sue you for using the code they contributed, at least under patents they control.</p>
+<h3>Licenses That Are Largely Silent on Patents</h3>
+<ul><li><strong>MIT License</strong> — grants a copyright license only; contains no express patent grant.</li><li><strong>BSD licenses (2-clause, 3-clause)</strong> — same situation.</li><li><strong>ISC License</strong> — copyright only.</li></ul>
+<p>Silence on patents does not mean you have a patent license. It means the license simply does not address the question. A contributor to an MIT-licensed project could hold a patent on a method implemented in that code and — in theory — enforce it separately. In practice this is uncommon for small utilities, but it is a real legal gap, not a hypothetical one.</p>
+<h2>The Separate Problem of Third-Party Patents</h2>
+<p>Even when a project's license includes a contributor patent grant, that grant only covers patents held by contributors to that specific project. It does not cover:</p>
+<ul><li>Patents held by companies or individuals who never contributed to the project</li><li>Patents that read on the underlying technique regardless of who implemented it</li><li>Standards-essential patents, if the software implements a protocol or standard</li></ul>
+<p>This means a well-licensed open source component can still expose your product to infringement claims from parties entirely unconnected to the project. The open source license is not a shield against the rest of the patent world.</p>
+<h2>What This Means When You Are Building (or Investing In) a Product</h2>
+<p>Founders and product teams should think about open source patent exposure in two directions simultaneously: <strong>inbound</strong> (the components you pull in) and <strong>outbound</strong> (your own IP position).</p>
+<h3>Inbound: What You Incorporate</h3>
+<ul><li>Understand which licenses govern the open source components in your stack. Patent grant or not?</li><li>For core, revenue-generating functionality, consider whether the underlying technique is the kind of thing companies patent. Database engines, compression algorithms, cryptographic implementations, and ML inference methods are areas where patent activity is real.</li><li>&quot;Everyone uses this library&quot; is not a legal defense. Widespread use affects practical enforcement risk, but it does not eliminate the legal right to enforce.</li></ul>
+<h3>Outbound: Your Own Patents</h3>
+<ul><li>If you contribute to open source projects and you hold patents, the license governing that project may create an implied or express patent license in those patents. Understand what you are granting before you contribute.</li><li>If you plan to patent your own innovations, make sure your patent counsel knows what open source components are embedded in your product. Prior art searches and claim drafting both benefit from that context.</li><li>Releasing your own code as open source can affect your ability to patent related innovations later. Public disclosure starts clocks running under U.S. patent law.</li></ul>
+<h2>Practical Takeaways</h2>
+<ul><li>Not all open source licenses include a patent grant — MIT and BSD licenses do not; Apache 2.0 and GPLv3 do.</li><li>A contributor patent grant only covers patents held by that project's contributors, not third-party patent holders.</li><li>Core technical functionality (algorithms, protocols, ML methods) carries more patent exposure than glue code or UI utilities.</li><li>Contributing code to an open source project under certain licenses can create patent obligations you did not intend.</li><li>Public release of your own code can start U.S. patent disclosure clocks — talk to a patent attorney before open-sourcing anything you might want to protect.</li><li>Patent risk in your open source stack is a legitimate due-diligence item for investors, acquirers, and enterprise customers — getting ahead of it early is easier than explaining it later.</li></ul>
+<div class="appcta"><h3>Draft it, search it, check it — with a human in the loop.</h3><p>YourPatentAI drafts provisional and non-provisional applications, runs prior-art search with IDS export, and checks claims for §§ 102, 103 and 112 issues before you file.</p><a href="https://apps.apple.com/us/app/id6759668270">Get YourPatentAI</a><a class="ghost" href="/">Learn more</a></div>
+<p class="disclaimer">This guide is general education, not legal advice, and does not create an attorney–client relationship. For your specific situation, talk to a registered patent attorney.</p>
+</div></article>
+<footer><div class="wrap"><span>© 2026 YourPatentAI · AI invented for patents™</span><span><a href="/">yourpatentai.com</a></span></div></footer>
+</body></html>

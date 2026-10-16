@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Literal Infringement vs. Doctrine of Equivalents: How Courts Decide If Your App Crosses the Line — YourPatentAI Library</title>
+<meta name="description" content="A practical explanation of how courts determine whether a mobile app infringes a patent claim, covering both word-for-word infringement and the broader doctrine of equivalents">
+<link rel="canonical" href="https://yourpatentai.com/library/patent-claims-infringement-mobile-apps/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YourPatentAI">
+<meta property="og:title" content="Literal Infringement vs. Doctrine of Equivalents: How Courts Decide If Your App Crosses the Line">
+<meta property="og:description" content="A practical explanation of how courts determine whether a mobile app infringes a patent claim, covering both word-for-word infringement and the broader doctrine of equivalents">
+<meta property="og:url" content="https://yourpatentai.com/library/patent-claims-infringement-mobile-apps/">
+<meta property="og:image" content="https://yourpatentai.com/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Literal Infringement vs. Doctrine of Equivalents: How Courts Decide If Your App Crosses the Line">
+<meta name="twitter:description" content="A practical explanation of how courts determine whether a mobile app infringes a patent claim, covering both word-for-word infringement and the broader doctrine of equivalents">
+<meta name="twitter:image" content="https://yourpatentai.com/og/default.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E1A2B;--ink:#14202E;--cream:#FBF8F2;--muted:#5B6672;--gold:#C9A227;--line:rgba(20,32,46,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);background:var(--navy);color:#fff}
+.nav a{color:#fff;text-decoration:none}.nav .brand{font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.nav .links{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:.82rem}
+.nav .cta{background:var(--gold);color:#1a1406;border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--navy);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,72px)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}.crumb a{color:var(--gold);text-decoration:none}
+.band h1{font-weight:600;font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+.band .lede{color:rgba(255,255,255,.78);font-size:1.1rem;max-width:58ch}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.55);margin-top:18px}
+.prose{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.prose p{margin:0 0 1.35em}.prose h2{font-weight:600;font-size:1.55rem;margin:1.9em 0 .6em}.prose h3{font-weight:600;font-size:1.2rem;margin:1.6em 0 .5em}
+.prose ul,.prose ol{margin:0 0 1.35em 1.3em}.prose li{margin:.3em 0}.prose code{font-family:'IBM Plex Mono',monospace;font-size:.85em;background:rgba(20,32,46,.06);padding:.1em .35em;border-radius:4px}
+.appcta{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:18px;padding:36px 28px}
+.appcta h3{font-weight:600;font-size:1.3rem;margin-bottom:8px}.appcta p{color:rgba(255,255,255,.75);margin:0 0 18px;font-size:1rem}
+.appcta a{display:inline-block;background:var(--gold);color:#1a1406;font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;margin-right:10px}
+.appcta a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.disclaimer{margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.list{list-style:none}.list li{border-bottom:1px solid var(--line)}.list a{display:block;padding:26px 0;text-decoration:none;color:inherit}
+.list .cat{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.list h2{font-weight:600;font-size:1.45rem;margin:6px 0 6px}.list a:hover h2{color:var(--gold)}.list p{color:var(--muted);margin:0;font-size:1rem}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:rgba(255,255,255,.8);text-decoration:none}
+</style>
+</head><body>
+<nav class="nav"><a class="brand" href="/">YourPatentAI</a><div class="links"><a href="/library/">Library</a><a class="cta" href="https://apps.apple.com/us/app/id6759668270">Get the app</a></div></nav>
+
+<header class="band"><div class="wrap">
+<p class="crumb"><a href="/library/">Library</a> · Mobile Apps</p>
+<h1>Literal Infringement vs. Doctrine of Equivalents: How Courts Decide If Your App Crosses the Line</h1>
+<p class="lede">A practical explanation of how courts determine whether a mobile app infringes a patent claim, covering both word-for-word infringement and the broader doctrine of equivalents</p>
+<p class="meta">2026-10-16 · patent infringement · doctrine of equivalents · claim construction · mobile apps</p>
+</div></header>
+<article class="prose"><div class="wrap">
+<p>When someone accuses your app of infringing a patent, the first real question is not whether you copied anything — it is whether your product, as it actually works, falls within the scope of the patent's claims. Two distinct legal tests govern that analysis, and understanding both changes how you read a competitor's patent and how you evaluate your own risk.</p>
+<h2>How Infringement Analysis Starts: Claim Construction</h2>
+<p>Before a court decides whether your app infringes, it has to decide what the claims actually mean. This step is called claim construction. The court reads the claim language, the patent's written description, and the prosecution history — every argument the applicant made to the USPTO during examination — to assign a precise meaning to each claim term.</p>
+<p>This matters practically because words in claims are terms of art, not ordinary conversation. A claim that recites &quot;continuously monitoring&quot; might mean something narrower than you assume, or something broader. Until the terms are construed, you cannot reliably compare your app against the claim. Claim construction disputes are frequently the center of gravity in patent litigation.</p>
+<h2>Literal Infringement: Every Element, Exactly</h2>
+<p>Literal infringement requires that your product or process include every single element recited in a patent claim. Courts apply this through the <strong>all-elements rule</strong>: if one element is missing, there is no literal infringement, full stop.</p>
+<p>For a mobile app, this analysis is feature-by-feature and step-by-step:</p>
+<ul><li>A method claim reciting four steps requires your app to perform all four steps, in the way the claim describes them.</li><li>A system claim reciting a server component, a client device, and a specific data structure requires all three in the arrangement the claim specifies.</li><li>A claim element your app simply does not have is a potential non-infringement argument worth documenting.</li></ul>
+<p>This is why claim drafting precision matters so much. A claim written with unnecessary structural specificity is easier to design around. A claim written at the right level of generality is harder to avoid without changing how your product works in a meaningful way.</p>
+<h3>Where Literal Infringement Gets Complicated</h3>
+<p>The tricky situations arise when your implementation is nearly identical to the claimed invention but uses a different term, a slightly different technical means, or a minor variation. That is where the second test enters.</p>
+<h2>The Doctrine of Equivalents</h2>
+<p>The doctrine of equivalents exists because literal word-matching can produce an unfair result. If an inventor claimed a widget made of steel and a competitor made the identical widget from titanium, pure literalism would find no infringement — which is not what the law intends.</p>
+<p>Under the doctrine of equivalents, a court can find infringement even when an element of your product does not literally match the claim language, if that element performs <strong>substantially the same function, in substantially the same way, to achieve substantially the same result</strong>. This is often called the function-way-result test.</p>
+<p>For mobile apps, common scenarios include:</p>
+<ul><li>Using a different algorithm that accomplishes the same processing task as the claimed method.</li><li>Substituting a different data format that serves an identical structural role in the claimed system.</li><li>Replacing a claimed network call with a local cache operation that achieves the same outcome for the user.</li></ul>
+<h3>The Prosecution History Limit</h3>
+<p>The doctrine of equivalents is not unlimited. If a patent applicant narrowed a claim during prosecution — for example, to overcome a prior art rejection — that narrowing can bar the applicant from later recapturing the surrendered territory through equivalents. This is prosecution history estoppel, and it is a meaningful defense. If you can show that the scope you allegedly infringe is exactly what the applicant gave up to get the patent granted, the doctrine of equivalents may not reach you.</p>
+<h2>What This Means When You Receive a Demand or Evaluate Risk</h2>
+<p>When you are on the receiving end of an infringement allegation, the analysis is sequential:</p>
+<ol><li>Get the asserted claims and read them element by element.</li><li>Map each element against how your app actually works — technically, not commercially.</li><li>Identify any element your app genuinely lacks for literal infringement purposes.</li><li>For elements that are close but not identical, assess function, way, and result.</li><li>Pull the prosecution history to check whether equivalents are estopped for disputed elements.</li></ol>
+<p>This is not a process you can fully complete without a patent attorney, but understanding the structure helps you participate in the analysis rather than just receive conclusions.</p>
+<h2>Practical Takeaways</h2>
+<ul><li>Infringement is determined by comparing your product to patent claims, not to the competitor's product.</li><li>Missing even one claim element defeats literal infringement — document every genuine difference.</li><li>The doctrine of equivalents can extend a claim's reach beyond its literal words using the function-way-result test.</li><li>Prosecution history estoppel limits equivalents wherever the applicant surrendered claim scope during examination.</li><li>Claim construction — what the words actually mean — often determines the outcome before infringement is even analyzed.</li><li>Freedom-to-operate analysis applies both tests; a review that only checks literal language is incomplete.</li></ul>
+<div class="appcta"><h3>Draft it, search it, check it — with a human in the loop.</h3><p>YourPatentAI drafts provisional and non-provisional applications, runs prior-art search with IDS export, and checks claims for §§ 102, 103 and 112 issues before you file.</p><a href="https://apps.apple.com/us/app/id6759668270">Get YourPatentAI</a><a class="ghost" href="/">Learn more</a></div>
+<p class="disclaimer">This guide is general education, not legal advice, and does not create an attorney–client relationship. For your specific situation, talk to a registered patent attorney.</p>
+</div></article>
+<footer><div class="wrap"><span>© 2026 YourPatentAI · AI invented for patents™</span><span><a href="/">yourpatentai.com</a></span></div></footer>
+</body></html>

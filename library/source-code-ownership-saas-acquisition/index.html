@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Source Code Ownership in SaaS Acquisitions: What the Asset Purchase Agreement Actually Transfers — YourPatentAI Library</title>
+<meta name="description" content="When a SaaS company is acquired, the asset purchase agreement must carefully enumerate what IP is actually being transferred, because generic language about software ownership often leaves gaps that surface after the deal closes.">
+<link rel="canonical" href="https://yourpatentai.com/library/source-code-ownership-saas-acquisition/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YourPatentAI">
+<meta property="og:title" content="Source Code Ownership in SaaS Acquisitions: What the Asset Purchase Agreement Actually Transfers">
+<meta property="og:description" content="When a SaaS company is acquired, the asset purchase agreement must carefully enumerate what IP is actually being transferred, because generic language about software ownership often leaves gaps that surface after the deal closes.">
+<meta property="og:url" content="https://yourpatentai.com/library/source-code-ownership-saas-acquisition/">
+<meta property="og:image" content="https://yourpatentai.com/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Source Code Ownership in SaaS Acquisitions: What the Asset Purchase Agreement Actually Transfers">
+<meta name="twitter:description" content="When a SaaS company is acquired, the asset purchase agreement must carefully enumerate what IP is actually being transferred, because generic language about software ownership often leaves gaps that surface after the deal closes.">
+<meta name="twitter:image" content="https://yourpatentai.com/og/default.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E1A2B;--ink:#14202E;--cream:#FBF8F2;--muted:#5B6672;--gold:#C9A227;--line:rgba(20,32,46,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);background:var(--navy);color:#fff}
+.nav a{color:#fff;text-decoration:none}.nav .brand{font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.nav .links{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:.82rem}
+.nav .cta{background:var(--gold);color:#1a1406;border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--navy);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,72px)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}.crumb a{color:var(--gold);text-decoration:none}
+.band h1{font-weight:600;font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+.band .lede{color:rgba(255,255,255,.78);font-size:1.1rem;max-width:58ch}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.55);margin-top:18px}
+.prose{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.prose p{margin:0 0 1.35em}.prose h2{font-weight:600;font-size:1.55rem;margin:1.9em 0 .6em}.prose h3{font-weight:600;font-size:1.2rem;margin:1.6em 0 .5em}
+.prose ul,.prose ol{margin:0 0 1.35em 1.3em}.prose li{margin:.3em 0}.prose code{font-family:'IBM Plex Mono',monospace;font-size:.85em;background:rgba(20,32,46,.06);padding:.1em .35em;border-radius:4px}
+.appcta{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:18px;padding:36px 28px}
+.appcta h3{font-weight:600;font-size:1.3rem;margin-bottom:8px}.appcta p{color:rgba(255,255,255,.75);margin:0 0 18px;font-size:1rem}
+.appcta a{display:inline-block;background:var(--gold);color:#1a1406;font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;margin-right:10px}
+.appcta a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.disclaimer{margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.list{list-style:none}.list li{border-bottom:1px solid var(--line)}.list a{display:block;padding:26px 0;text-decoration:none;color:inherit}
+.list .cat{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.list h2{font-weight:600;font-size:1.45rem;margin:6px 0 6px}.list a:hover h2{color:var(--gold)}.list p{color:var(--muted);margin:0;font-size:1rem}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:rgba(255,255,255,.8);text-decoration:none}
+</style>
+</head><body>
+<nav class="nav"><a class="brand" href="/">YourPatentAI</a><div class="links"><a href="/library/">Library</a><a class="cta" href="https://apps.apple.com/us/app/id6759668270">Get the app</a></div></nav>
+
+<header class="band"><div class="wrap">
+<p class="crumb"><a href="/library/">Library</a> · Software Agreements</p>
+<h1>Source Code Ownership in SaaS Acquisitions: What the Asset Purchase Agreement Actually Transfers</h1>
+<p class="lede">When a SaaS company is acquired, the asset purchase agreement must carefully enumerate what IP is actually being transferred, because generic language about software ownership often leaves gaps that surface after the deal closes.</p>
+<p class="meta">2026-10-17 · software agreements · saas · acquisitions · ip assignment</p>
+</div></header>
+<article class="prose"><div class="wrap">
+<p>Buying a SaaS company means buying its software, but software ownership is a legal construct that does not transfer automatically just because money changes hands. The asset purchase agreement (APA) is the document that defines exactly what the buyer receives, and vague drafting in that document can leave a buyer holding a product it does not fully own.</p>
+<h2>What &quot;Owning&quot; Software Actually Means</h2>
+<p>Source code is protected primarily by copyright. Copyright in software vests automatically in the author at the moment of creation — not in the company, unless the work qualifies as a &quot;work made for hire&quot; or was validly assigned. This distinction matters enormously in acquisitions.</p>
+<p>A SaaS company typically has code written by:</p>
+<ul><li>Full-time employees (usually covered by employment agreements containing assignment clauses)</li><li>Independent contractors (covered only if a written assignment exists — work-for-hire doctrine generally does not apply to contractors outside enumerated statutory categories)</li><li>Co-founders who may have contributed code before signing anything</li><li>Open source projects incorporated into the codebase</li></ul>
+<p>If any of those contributors never signed a valid assignment, the company may not own what it thinks it owns — and the buyer inherits that problem.</p>
+<h2>What the APA Needs to Say</h2>
+<p>A well-drafted APA does not just say &quot;seller transfers all intellectual property.&quot; It itemizes the transferred assets with enough specificity to leave no ambiguity.</p>
+<h3>Schedules and Exhibits</h3>
+<p>The APA should attach schedules that list:</p>
+<ul><li>All registered IP (patents, copyrights, trademarks) by registration number</li><li>Pending applications</li><li>Unregistered IP, including identified source code repositories, proprietary algorithms, and trade secrets</li><li>Domain names and social media handles</li><li>Software licenses the seller holds (both inbound and outbound)</li></ul>
+<p>Generic language like &quot;all IP used in the business&quot; can be argued over. A numbered list is harder to dispute.</p>
+<h3>The Assignment Mechanics</h3>
+<p>A representation in the APA that the seller owns the IP is not the same as transferring it. The transfer requires a separate assignment instrument — often an IP Assignment Agreement executed at closing — that actually conveys the rights. For registered patents and patent applications, that assignment should be recorded with the USPTO to put the world on notice. For copyright, recordation with the Copyright Office is optional but useful.</p>
+<p>Buyers should also require the seller to deliver assignment agreements from any individual contributors who were not covered by a prior employment or contractor agreement. This is sometimes called a &quot;clean-up assignment&quot; and is often negotiated as a closing condition.</p>
+<h2>Representations and Warranties the Buyer Should Demand</h2>
+<p>The IP representations in an APA are where the seller makes legally binding statements about what it actually owns. These should specifically cover:</p>
+<ul><li><strong>Chain of title:</strong> The seller has valid, unencumbered title to all listed IP</li><li><strong>No liens or encumbrances:</strong> The IP has not been pledged as collateral (check UCC filings)</li><li><strong>Contractor and employee assignments:</strong> All contributors have executed written assignments</li><li><strong>Open source compliance:</strong> The product does not incorporate open source code in a way that would impose license obligations on the buyer (such as copyleft provisions that could affect proprietary code)</li><li><strong>No pending or threatened IP claims:</strong> No third party has asserted ownership or infringement claims against the seller's IP</li><li><strong>No key-person dependencies:</strong> The seller does not rely on a license personal to a named individual that would not transfer</li></ul>
+<p>These representations are backed by indemnification obligations, which means the seller (or its principals) compensates the buyer if a representation turns out to be false. The scope of that indemnification — its cap, basket, and survival period — is heavily negotiated.</p>
+<h2>What Buyers Routinely Miss</h2>
+<p>Even sophisticated buyers sometimes overlook:</p>
+<ul><li><strong>Software-as-a-Service delivery:</strong> If the seller's product relies on third-party APIs or platform services, the buyer needs to confirm those agreements are assignable and that assignment does not require counterparty consent</li><li><strong>Employee invention assignment gaps:</strong> Some states, including California and Washington, limit what employers can require employees to assign; prior employees may retain rights to certain inventions</li><li><strong>Data and the product:</strong> Customer data and trained model weights are not automatically part of an IP transfer; they require separate treatment under the APA and applicable privacy law</li><li><strong>License restrictions on resale:</strong> Inbound software licenses that the seller relies on to operate its product may prohibit assignment without the licensor's consent</li></ul>
+<h2>Practical Takeaways</h2>
+<ul><li>Never rely on generic &quot;all IP&quot; language; require itemized schedules attached to the APA</li><li>Confirm that a separate assignment instrument is executed and, for patents, recorded at the USPTO at or before closing</li><li>Conduct a contributor audit before closing to identify anyone who wrote code without signing an assignment</li><li>Review all inbound software licenses for anti-assignment clauses that could disrupt the product post-closing</li><li>Check UCC filings against the seller to identify any security interests in IP that must be released at closing</li><li>Negotiate indemnification provisions that survive closing long enough to surface title defects, which often take time to appear</li></ul>
+<div class="appcta"><h3>Draft it, search it, check it — with a human in the loop.</h3><p>YourPatentAI drafts provisional and non-provisional applications, runs prior-art search with IDS export, and checks claims for §§ 102, 103 and 112 issues before you file.</p><a href="https://apps.apple.com/us/app/id6759668270">Get YourPatentAI</a><a class="ghost" href="/">Learn more</a></div>
+<p class="disclaimer">This guide is general education, not legal advice, and does not create an attorney–client relationship. For your specific situation, talk to a registered patent attorney.</p>
+</div></article>
+<footer><div class="wrap"><span>© 2026 YourPatentAI · AI invented for patents™</span><span><a href="/">yourpatentai.com</a></span></div></footer>
+</body></html>

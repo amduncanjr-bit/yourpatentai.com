@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copyleft Licenses and Patent Grants: What You Actually License When You Distribute Open Source Code — YourPatentAI Library</title>
+<meta name="description" content="When you distribute software under a copyleft license, you may be granting patent rights far broader than you intended, and understanding exactly what gets licensed helps you decide what to distribute and how">
+<link rel="canonical" href="https://yourpatentai.com/library/copyleft-licenses-patent-grant-scope/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YourPatentAI">
+<meta property="og:title" content="Copyleft Licenses and Patent Grants: What You Actually License When You Distribute Open Source Code">
+<meta property="og:description" content="When you distribute software under a copyleft license, you may be granting patent rights far broader than you intended, and understanding exactly what gets licensed helps you decide what to distribute and how">
+<meta property="og:url" content="https://yourpatentai.com/library/copyleft-licenses-patent-grant-scope/">
+<meta property="og:image" content="https://yourpatentai.com/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Copyleft Licenses and Patent Grants: What You Actually License When You Distribute Open Source Code">
+<meta name="twitter:description" content="When you distribute software under a copyleft license, you may be granting patent rights far broader than you intended, and understanding exactly what gets licensed helps you decide what to distribute and how">
+<meta name="twitter:image" content="https://yourpatentai.com/og/default.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E1A2B;--ink:#14202E;--cream:#FBF8F2;--muted:#5B6672;--gold:#C9A227;--line:rgba(20,32,46,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);background:var(--navy);color:#fff}
+.nav a{color:#fff;text-decoration:none}.nav .brand{font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.nav .links{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:.82rem}
+.nav .cta{background:var(--gold);color:#1a1406;border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--navy);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,72px)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}.crumb a{color:var(--gold);text-decoration:none}
+.band h1{font-weight:600;font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+.band .lede{color:rgba(255,255,255,.78);font-size:1.1rem;max-width:58ch}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.55);margin-top:18px}
+.prose{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.prose p{margin:0 0 1.35em}.prose h2{font-weight:600;font-size:1.55rem;margin:1.9em 0 .6em}.prose h3{font-weight:600;font-size:1.2rem;margin:1.6em 0 .5em}
+.prose ul,.prose ol{margin:0 0 1.35em 1.3em}.prose li{margin:.3em 0}.prose code{font-family:'IBM Plex Mono',monospace;font-size:.85em;background:rgba(20,32,46,.06);padding:.1em .35em;border-radius:4px}
+.appcta{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:18px;padding:36px 28px}
+.appcta h3{font-weight:600;font-size:1.3rem;margin-bottom:8px}.appcta p{color:rgba(255,255,255,.75);margin:0 0 18px;font-size:1rem}
+.appcta a{display:inline-block;background:var(--gold);color:#1a1406;font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;margin-right:10px}
+.appcta a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.disclaimer{margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.list{list-style:none}.list li{border-bottom:1px solid var(--line)}.list a{display:block;padding:26px 0;text-decoration:none;color:inherit}
+.list .cat{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.list h2{font-weight:600;font-size:1.45rem;margin:6px 0 6px}.list a:hover h2{color:var(--gold)}.list p{color:var(--muted);margin:0;font-size:1rem}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:rgba(255,255,255,.8);text-decoration:none}
+</style>
+</head><body>
+<nav class="nav"><a class="brand" href="/">YourPatentAI</a><div class="links"><a href="/library/">Library</a><a class="cta" href="https://apps.apple.com/us/app/id6759668270">Get the app</a></div></nav>
+
+<header class="band"><div class="wrap">
+<p class="crumb"><a href="/library/">Library</a> · Open Source</p>
+<h1>Copyleft Licenses and Patent Grants: What You Actually License When You Distribute Open Source Code</h1>
+<p class="lede">When you distribute software under a copyleft license, you may be granting patent rights far broader than you intended, and understanding exactly what gets licensed helps you decide what to distribute and how</p>
+<p class="meta">2026-11-23 · open source · patent licensing · copyleft · patent grants</p>
+</div></header>
+<article class="prose"><div class="wrap">
+<p>Shipping code under a copyleft license like GPL or AGPL does more than share your source. Many of these licenses include an explicit or implicit patent grant, meaning that by distributing your software you may be licensing every patent claim that reads on that software to every downstream recipient — royalty-free, irrevocable, and worldwide. That consequence is easy to miss when you are focused on the copyright side of open source.</p>
+<h2>What a Patent Grant in a License Actually Does</h2>
+<p>A patent grant is a promise not to sue. When a copyleft license contains one, you are telling every person who receives your software that they can make, use, sell, and distribute it without infringing any patent you hold that is necessarily practiced by the software you distributed.</p>
+<h3>The Key Word Is &quot;Necessarily&quot;</h3>
+<p>Most patent grants in open source licenses are scoped to patents that are <em>necessarily</em> infringed by the licensed work itself. That sounds narrow, but it is not always narrow in practice. If your software cannot function without practicing your patented method, that patent is almost certainly within the grant. The question is not whether you <em>intended</em> to license it — the question is whether a court would find the patent necessarily practiced by what you shipped.</p>
+<h3>Apache 2.0 Makes It Explicit</h3>
+<p>The Apache License 2.0 contains a written patent grant that covers patents held by contributors, scoped to their contributions. It also includes a patent retaliation clause that terminates the grant if the recipient sues for patent infringement. GPL version 2 does not contain an explicit patent grant, but courts and commentators have read an implicit one into it based on the license's anti-restriction language. GPL version 3 adds an explicit grant and broader anti-tivoization language. AGPL version 3 follows the same structure as GPL v3. LGPL, MPL 2.0, and EUPL each handle patent grants differently. The license text controls — read it before you distribute.</p>
+<h2>Where Founders and Companies Get Surprised</h2>
+<h3>Distributing Code That Practices a Pending Patent</h3>
+<p>You file a patent application, then later open-source a reference implementation that practices the claimed invention. If you distribute that code under Apache 2.0 or GPL v3, you may have granted a patent license before the patent even issued. The grant typically attaches at the time of distribution, not at the time of issuance. By the time your patent grants, every downstream recipient already holds a license.</p>
+<h3>Contributions to Third-Party Projects</h3>
+<p>If your engineer contributes code to an open source project, that contribution may carry your company's patent rights with it — not just the engineer's. Contributor License Agreements (CLAs) govern part of this, but the underlying license the project uses also matters. A contribution merged into an Apache 2.0 project triggers that license's patent grant against your company's portfolio for the patents that read on the contribution.</p>
+<h3>Internal Forks That Escape</h3>
+<p>Companies sometimes maintain an internal fork of an open source library and then inadvertently publish it — through a public repository, a containerized product, or a cloud deployment that triggers AGPL's network-use provision. Once distributed, the patent grant follows the distribution. Undoing it is not straightforward.</p>
+<h2>How This Should Change Your Workflow</h2>
+<h3>Before You Open-Source Anything</h3>
+<p>Before you publish code under a copyleft license, run a check against your pending applications and issued patents. Ask whether the code necessarily practices any claim. If it does, you face a choice: file a continuation or divisional that carves out features you want to commercialize exclusively, narrow the open-source release to avoid the patented method, or accept that you are licensing those claims. That is a business decision, but it needs to be a deliberate one.</p>
+<h3>Before You Accept Contributions</h3>
+<p>If you maintain an open source project and accept contributions, your CLA should address what happens to contributor patents. Many well-drafted CLAs require contributors to grant a patent license covering their contributions. Review what your CLA actually says — boilerplate CLAs vary significantly.</p>
+<h3>License Selection Is a Patent Decision</h3>
+<p>Choosing between MIT, Apache 2.0, GPL v2, GPL v3, and AGPL is not just a copyright decision. The patent grant scope differs across each one. MIT is silent on patents. Apache 2.0 is explicit. GPL v2 is implicit. GPL v3 and AGPL v3 are explicit and broader. If patent protection matters to your business model, license selection needs input from someone who has read your patent portfolio alongside the license text.</p>
+<h2>Practical Takeaways</h2>
+<ul><li>Distributing software under a copyleft license can create an irrevocable patent license for every downstream recipient, whether or not you intended it.</li><li>The grant typically covers patents your software <em>necessarily</em> practices — if the code cannot work without your patented method, that patent is likely within the grant.</li><li>Apache 2.0 and GPL v3 contain explicit patent grants; GPL v2 carries an implicit one that courts have recognized.</li><li>Run a patent clearance check against your pending and issued applications before you publish any open-source release.</li><li>Engineer contributions to third-party open source projects may carry your company's patent rights, not just the individual contributor's.</li><li>License selection is a patent strategy decision — treat it as one before the code ships, not after.</li></ul>
+<div class="appcta"><h3>Draft it, search it, check it — with a human in the loop.</h3><p>YourPatentAI drafts provisional and non-provisional applications, runs prior-art search with IDS export, and checks claims for §§ 102, 103 and 112 issues before you file.</p><a href="https://apps.apple.com/us/app/id6759668270">Get YourPatentAI</a><a class="ghost" href="/">Learn more</a></div>
+<p class="disclaimer">This guide is general education, not legal advice, and does not create an attorney–client relationship. For your specific situation, talk to a registered patent attorney.</p>
+</div></article>
+<footer><div class="wrap"><span>© 2026 YourPatentAI · AI invented for patents™</span><span><a href="/">yourpatentai.com</a></span></div></footer>
+</body></html>

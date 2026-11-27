@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaaS Delivery and Patent Exhaustion: What Happens When You Distribute Through a Service Instead of a Product — YourPatentAI Library</title>
+<meta name="description" content="When a patent owner licenses a SaaS platform instead of selling a physical product, the rules around exhaustion work differently and understanding those differences matters before you build on someone else's service or license your own">
+<link rel="canonical" href="https://yourpatentai.com/library/patent-license-field-exhaustion-saas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="YourPatentAI">
+<meta property="og:title" content="SaaS Delivery and Patent Exhaustion: What Happens When You Distribute Through a Service Instead of a Product">
+<meta property="og:description" content="When a patent owner licenses a SaaS platform instead of selling a physical product, the rules around exhaustion work differently and understanding those differences matters before you build on someone else's service or license your own">
+<meta property="og:url" content="https://yourpatentai.com/library/patent-license-field-exhaustion-saas/">
+<meta property="og:image" content="https://yourpatentai.com/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SaaS Delivery and Patent Exhaustion: What Happens When You Distribute Through a Service Instead of a Product">
+<meta name="twitter:description" content="When a patent owner licenses a SaaS platform instead of selling a physical product, the rules around exhaustion work differently and understanding those differences matters before you build on someone else's service or license your own">
+<meta name="twitter:image" content="https://yourpatentai.com/og/default.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E1A2B;--ink:#14202E;--cream:#FBF8F2;--muted:#5B6672;--gold:#C9A227;--line:rgba(20,32,46,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);background:var(--navy);color:#fff}
+.nav a{color:#fff;text-decoration:none}.nav .brand{font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.nav .links{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:.82rem}
+.nav .cta{background:var(--gold);color:#1a1406;border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--navy);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,72px)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}.crumb a{color:var(--gold);text-decoration:none}
+.band h1{font-weight:600;font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+.band .lede{color:rgba(255,255,255,.78);font-size:1.1rem;max-width:58ch}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.55);margin-top:18px}
+.prose{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.prose p{margin:0 0 1.35em}.prose h2{font-weight:600;font-size:1.55rem;margin:1.9em 0 .6em}.prose h3{font-weight:600;font-size:1.2rem;margin:1.6em 0 .5em}
+.prose ul,.prose ol{margin:0 0 1.35em 1.3em}.prose li{margin:.3em 0}.prose code{font-family:'IBM Plex Mono',monospace;font-size:.85em;background:rgba(20,32,46,.06);padding:.1em .35em;border-radius:4px}
+.appcta{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:18px;padding:36px 28px}
+.appcta h3{font-weight:600;font-size:1.3rem;margin-bottom:8px}.appcta p{color:rgba(255,255,255,.75);margin:0 0 18px;font-size:1rem}
+.appcta a{display:inline-block;background:var(--gold);color:#1a1406;font-weight:600;border-radius:999px;padding:12px 24px;text-decoration:none;margin-right:10px}
+.appcta a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.disclaimer{margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.list{list-style:none}.list li{border-bottom:1px solid var(--line)}.list a{display:block;padding:26px 0;text-decoration:none;color:inherit}
+.list .cat{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.list h2{font-weight:600;font-size:1.45rem;margin:6px 0 6px}.list a:hover h2{color:var(--gold)}.list p{color:var(--muted);margin:0;font-size:1rem}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:rgba(255,255,255,.8);text-decoration:none}
+</style>
+</head><body>
+<nav class="nav"><a class="brand" href="/">YourPatentAI</a><div class="links"><a href="/library/">Library</a><a class="cta" href="https://apps.apple.com/us/app/id6759668270">Get the app</a></div></nav>
+
+<header class="band"><div class="wrap">
+<p class="crumb"><a href="/library/">Library</a> · Internet &amp; E-Commerce</p>
+<h1>SaaS Delivery and Patent Exhaustion: What Happens When You Distribute Through a Service Instead of a Product</h1>
+<p class="lede">When a patent owner licenses a SaaS platform instead of selling a physical product, the rules around exhaustion work differently and understanding those differences matters before you build on someone else's service or license your own</p>
+<p class="meta">2026-11-27 · saas · patent exhaustion · software patents · method claims</p>
+</div></header>
+<article class="prose"><div class="wrap">
+<p>Patent exhaustion is the doctrine that says once a patent owner makes an authorized sale of a patented item, they cannot sue downstream users of that same item for infringement. It is a sensible rule for physical goods. It gets considerably more complicated when the patented technology is delivered as a service over a network rather than transferred in a box.</p>
+<h2>Why SaaS Changes the Exhaustion Analysis</h2>
+<p>Exhaustion traditionally requires a <strong>sale</strong> — a transfer of title in an item that embodies the patent. In a SaaS model, nothing is sold in that sense. The vendor retains the software, runs it on its own infrastructure, and grants customers a right to use the output or interface. No copy of the patented code moves to the customer's ownership.</p>
+<p>Because there is no transfer of a patented article, courts have generally declined to find exhaustion triggered by a SaaS subscription alone. The patent owner keeps the right to assert the patent against downstream users even after the customer has paid for access. That is a materially different outcome than buying a licensed product off the shelf.</p>
+<h3>Method Claims Add Another Layer</h3>
+<p>Many software patents are drafted as method claims — claims covering a sequence of steps a system performs. When a SaaS provider runs those steps on a remote server, questions arise about who is performing the method: the vendor, the customer clicking a button, or some combination. Exhaustion doctrine does not resolve that neatly because it attaches to articles, not to performances of methods. If you are building on a third-party SaaS platform and that platform's underlying technology is covered by a method patent, the absence of an exhaustion shield means your continued use could theoretically be challenged by a patent owner who is not the platform itself — particularly if the platform's license from the patent owner did not expressly cover sublicensing users.</p>
+<h2>Authorized Sale vs. Authorized Service</h2>
+<p>The word <strong>authorized</strong> in exhaustion doctrine matters. Even in physical goods contexts, an unauthorized sale — one outside the scope of the patent owner's license — does not trigger exhaustion. In SaaS, the equivalent question is whether the platform has a license that covers its customers' use.</p>
+<ul><li>If a SaaS vendor licenses a patent for internal use only, customers using the service may not be covered.</li><li>If the license grants the vendor the right to sublicense end users, customers likely have a defensible position.</li><li>If the vendor simply has no patent license at all and is operating under an implied license theory, any protection for customers is fragile.</li></ul>
+<p>Before building a product or business process on a third-party SaaS platform, the safest question to ask is not just whether the platform has the rights to operate — it is whether those rights extend to you as a customer.</p>
+<h2>What Patent Owners Structuring SaaS Licenses Should Know</h2>
+<p>If you own patents and you are licensing them to a SaaS company, the absence of automatic exhaustion is an advantage worth structuring around deliberately.</p>
+<h3>Scope Carve-Outs</h3>
+<p>A well-drafted license can specify that it covers the vendor's internal operation of the platform but does not grant sublicense rights to end users. That preserves your ability to pursue separate licensing arrangements with large enterprise customers whose use of the platform is commercially significant.</p>
+<h3>Field-of-Use Restrictions Still Apply</h3>
+<p>Field-of-use restrictions in a SaaS patent license work the same way they do in product licenses — they limit what the licensee can do with the patent. But in a SaaS context, enforcing a field-of-use restriction requires you to audit how the platform is actually being deployed, which can be practically difficult without audit rights written into the agreement.</p>
+<h3>Downstream Customer Risk</h3>
+<p>If you want your SaaS licensee's customers to be covered, say so explicitly. Courts do not automatically imply sublicense rights, and an ambiguous license creates litigation risk for everyone in the chain.</p>
+<h2>Practical Takeaways</h2>
+<ul><li>Exhaustion doctrine generally does not apply to SaaS subscriptions because no patented article is sold; downstream users do not automatically inherit any shield.</li><li>If you are building on a third-party SaaS platform, check whether the platform's patent licenses expressly cover customer use — do not assume the platform's rights flow to you.</li><li>Method claims in software patents interact poorly with SaaS delivery because the performing party is often split between vendor and customer, creating infringement exposure that exhaustion will not resolve.</li><li>Patent owners licensing SaaS vendors can deliberately preserve rights against end users by limiting the scope of the license to vendor operations only.</li><li>Audit rights and sublicense provisions are not boilerplate in SaaS patent licenses — they determine who is actually covered and who is not.</li><li>If your company acquires a SaaS product or builds one for sale, map the patent encumbrances in the underlying platform before the transaction closes.</li></ul>
+<div class="appcta"><h3>Draft it, search it, check it — with a human in the loop.</h3><p>YourPatentAI drafts provisional and non-provisional applications, runs prior-art search with IDS export, and checks claims for §§ 102, 103 and 112 issues before you file.</p><a href="https://apps.apple.com/us/app/id6759668270">Get YourPatentAI</a><a class="ghost" href="/">Learn more</a></div>
+<p class="disclaimer">This guide is general education, not legal advice, and does not create an attorney–client relationship. For your specific situation, talk to a registered patent attorney.</p>
+</div></article>
+<footer><div class="wrap"><span>© 2026 YourPatentAI · AI invented for patents™</span><span><a href="/">yourpatentai.com</a></span></div></footer>
+</body></html>
